@@ -11,10 +11,22 @@
     <name>A custom project using myfaces 1.2 and facelets</name>
     <url>http://www.myorganization.org</url>
 <properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
-    
+        <jsf-myfaces.version>1.2.10</jsf-myfaces.version>
+        <jsf-ri.version>1.2_15</jsf-ri.version>        
+        <maven.jetty.plugin.version>6.1.22</maven.jetty.plugin.version>
+        <log4j.version>1.2.13</log4j.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+	<reporting>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-jxr-plugin</artifactId>
+	            <version>2.3</version>
+	        </plugin>
+	    </plugins>
+	</reporting>
     <build>
         <finalName>devOpsWeb</finalName>
         <plugins>
